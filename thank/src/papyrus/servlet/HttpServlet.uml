@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_NTUPkDXaEeSiuqb9jq0Hgw" name="model">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Qcm7wDXaEeSiuqb9jq0Hgw" name="Serializable"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_QcwFsDXaEeSiuqb9jq0Hgw" name="Realization3" client="_QcwFzTXaEeSiuqb9jq0Hgw" supplier="_Qcm7wDXaEeSiuqb9jq0Hgw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QcwFsTXaEeSiuqb9jq0Hgw" name="HttpServlet" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_QcwFsjXaEeSiuqb9jq0Hgw" general="_QcwFzTXaEeSiuqb9jq0Hgw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QcwFszXaEeSiuqb9jq0Hgw" name="METHOD_GET"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QcwFtDXaEeSiuqb9jq0Hgw" name="METHOD_POST"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFtTXaEeSiuqb9jq0Hgw" name="doGet">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFtjXaEeSiuqb9jq0Hgw" name="HttpServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFtzXaEeSiuqb9jq0Hgw" name="HttpServletResponse"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFuDXaEeSiuqb9jq0Hgw" name="getLastModified" visibility="protected">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFuTXaEeSiuqb9jq0Hgw" name="HttpServletRequest"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFujXaEeSiuqb9jq0Hgw" name="doPost">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFuzXaEeSiuqb9jq0Hgw" name="HttpServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFvDXaEeSiuqb9jq0Hgw" name="HttpServletResponse"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFvTXaEeSiuqb9jq0Hgw" name="service" visibility="protected">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFvjXaEeSiuqb9jq0Hgw" name="HttpServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFvzXaEeSiuqb9jq0Hgw" name="HttpServletResponse"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFwDXaEeSiuqb9jq0Hgw" name="service">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFwTXaEeSiuqb9jq0Hgw" name="ServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFwjXaEeSiuqb9jq0Hgw" name="ServletResponse"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_QcwFwzXaEeSiuqb9jq0Hgw" name="Realization1" client="_QcwFzTXaEeSiuqb9jq0Hgw" supplier="_QcwFxTXaEeSiuqb9jq0Hgw"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_QcwFxDXaEeSiuqb9jq0Hgw" name="Realization2" client="_QcwFzTXaEeSiuqb9jq0Hgw" supplier="_QcwF1DXaEeSiuqb9jq0Hgw"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_QcwFxTXaEeSiuqb9jq0Hgw" name="Servlet">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFxjXaEeSiuqb9jq0Hgw" name="init">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFxzXaEeSiuqb9jq0Hgw" name="ServletConfig"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFyDXaEeSiuqb9jq0Hgw" name="getServletConfig"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFyTXaEeSiuqb9jq0Hgw" name="service">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFyjXaEeSiuqb9jq0Hgw" name="ServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwFyzXaEeSiuqb9jq0Hgw" name="ServletResponse"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFzDXaEeSiuqb9jq0Hgw" name="destroy"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QcwFzTXaEeSiuqb9jq0Hgw" name="GenericServlet" isAbstract="true">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFzjXaEeSiuqb9jq0Hgw" name="init"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwFzzXaEeSiuqb9jq0Hgw" name="log">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwF0DXaEeSiuqb9jq0Hgw" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwF0TXaEeSiuqb9jq0Hgw" name="log">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwF0jXaEeSiuqb9jq0Hgw" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QcwF0zXaEeSiuqb9jq0Hgw" name="Throwable"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_QcwF1DXaEeSiuqb9jq0Hgw" name="ServletConfig">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwF1TXaEeSiuqb9jq0Hgw" name="getServletName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwF1jXaEeSiuqb9jq0Hgw" name="getServletContext"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QcwF1zXaEeSiuqb9jq0Hgw" name="getInitParameter"/>
+  </packagedElement>
+</uml:Model>
