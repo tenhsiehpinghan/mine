@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_XBsVMDXhEeSiuqb9jq0Hgw" name="model">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YMSgEDXhEeSiuqb9jq0Hgw" name="ServletRequest">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgETXhEeSiuqb9jq0Hgw" name=" getAttribute"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgEjXhEeSiuqb9jq0Hgw" name="getCharacterEncoding"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgEzXhEeSiuqb9jq0Hgw" name="getContentLength"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgFDXhEeSiuqb9jq0Hgw" name="getContentType"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgFTXhEeSiuqb9jq0Hgw" name="getInputStream"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgFjXhEeSiuqb9jq0Hgw" name="getParameter"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgFzXhEeSiuqb9jq0Hgw" name="getProtocol"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgGDXhEeSiuqb9jq0Hgw" name="getScheme"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgGTXhEeSiuqb9jq0Hgw" name="getServerName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgGjXhEeSiuqb9jq0Hgw" name="getRemoteAddr"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgGzXhEeSiuqb9jq0Hgw" name="getServerPort"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgHDXhEeSiuqb9jq0Hgw" name="getReader"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgHTXhEeSiuqb9jq0Hgw" name="setAttribute">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YMSgHjXhEeSiuqb9jq0Hgw" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YMSgHzXhEeSiuqb9jq0Hgw" name="Object"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgIDXhEeSiuqb9jq0Hgw" name="isSecure"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgITXhEeSiuqb9jq0Hgw" name="getLocales"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgIjXhEeSiuqb9jq0Hgw" name="getRequestDispatcher">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YMSgIzXhEeSiuqb9jq0Hgw" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgJDXhEeSiuqb9jq0Hgw" name="getRemotePort"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgJTXhEeSiuqb9jq0Hgw" name="getLocalAddr"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgJjXhEeSiuqb9jq0Hgw" name="getLocalPort"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgJzXhEeSiuqb9jq0Hgw" name="getServletContext"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgKDXhEeSiuqb9jq0Hgw" name="startAsync"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgKTXhEeSiuqb9jq0Hgw" name="getAsyncContext"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMSgKjXhEeSiuqb9jq0Hgw" name="getDispatcherType"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_iFzGYDXiEeSiuqb9jq0Hgw" name="HttpServletRequest">
+    <generalization xmi:type="uml:Generalization" xmi:id="_qnZ7EDXiEeSiuqb9jq0Hgw" general="_YMSgEDXhEeSiuqb9jq0Hgw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YMR5AjXhEeSiuqb9jq0Hgw" name="BASIC_AUTH"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YMR5AzXhEeSiuqb9jq0Hgw" name="FORM_AUTH"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YMR5BDXhEeSiuqb9jq0Hgw" name="CLIENT_CERT_AUTH"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YMR5BTXhEeSiuqb9jq0Hgw" name="DIGEST_AUTH"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5BjXhEeSiuqb9jq0Hgw" name="getAuthType"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5BzXhEeSiuqb9jq0Hgw" name="getCookies"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5CjXhEeSiuqb9jq0Hgw" name="getMethod"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5CDXhEeSiuqb9jq0Hgw" name="getHeader">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YMR5CTXhEeSiuqb9jq0Hgw" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5CzXhEeSiuqb9jq0Hgw" name="getPathInfo"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5DDXhEeSiuqb9jq0Hgw" name="getContextPath"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5DTXhEeSiuqb9jq0Hgw" name="getQueryString"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5DjXhEeSiuqb9jq0Hgw" name="getRemoteUser"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5DzXhEeSiuqb9jq0Hgw" name="isUserInRole"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5EDXhEeSiuqb9jq0Hgw" name="getUserPrincipal"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5ETXhEeSiuqb9jq0Hgw" name="getRequestedSessionId"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5EjXhEeSiuqb9jq0Hgw" name="getSession">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YMR5EzXhEeSiuqb9jq0Hgw" name="boolean"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5FTXhEeSiuqb9jq0Hgw" name="isRequestedSessionIdFromCookie"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5GTXhEeSiuqb9jq0Hgw" name="login">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YMR5GjXhEeSiuqb9jq0Hgw" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YMR5GzXhEeSiuqb9jq0Hgw" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5HDXhEeSiuqb9jq0Hgw" name="logout"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5HTXhEeSiuqb9jq0Hgw" name="getParts"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5FzXhEeSiuqb9jq0Hgw" name="authenticate">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YMR5GDXhEeSiuqb9jq0Hgw" name="HttpServletResponse"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5FjXhEeSiuqb9jq0Hgw" name="isRequestedSessionIdFromURL"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YMR5FDXhEeSiuqb9jq0Hgw" name="isRequestedSessionIdValid"/>
+  </packagedElement>
+</uml:Model>

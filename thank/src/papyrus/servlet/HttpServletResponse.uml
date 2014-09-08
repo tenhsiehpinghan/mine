@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Z8bykDXiEeSiuqb9jq0Hgw" name="model">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_cNKfEDXiEeSiuqb9jq0Hgw" name="HttpServletResponse">
+    <generalization xmi:type="uml:Generalization" xmi:id="_VUIE0DcNEeS1grM6paGB6g" general="_tuC74DXiEeSiuqb9jq0Hgw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KJbG8DcNEeS1grM6paGB6g" name="SC_OK"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QvCwEDcNEeS1grM6paGB6g" name="SC_BAD_REQUEST"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ClR1gDcMEeS1grM6paGB6g" name="addCookie">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_GPmLIDcMEeS1grM6paGB6g" name="Cookie"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PaqMgDcMEeS1grM6paGB6g" name="encodeURL">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YfUq8DcMEeS1grM6paGB6g" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WdmDwDcMEeS1grM6paGB6g" name="encodeRedirectURL">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZI068DcMEeS1grM6paGB6g" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cEurYDcMEeS1grM6paGB6g" name="sendError">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_eO8gMDcMEeS1grM6paGB6g" name="int"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fYI84DcMEeS1grM6paGB6g" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lg5q4DcMEeS1grM6paGB6g" name="sendRedirect">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nmNKgDcMEeS1grM6paGB6g" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qGR6kDcMEeS1grM6paGB6g" name="setDateHeader">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_yMKckDcMEeS1grM6paGB6g" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_2J0k8DcMEeS1grM6paGB6g" name="long"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4HFi4DcMEeS1grM6paGB6g" name="setHeader">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_5t5IoDcMEeS1grM6paGB6g" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_6H7ZQDcMEeS1grM6paGB6g" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_92tYIDcMEeS1grM6paGB6g" name="setIntHeader">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="__YmosDcMEeS1grM6paGB6g" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_AcJJUDcNEeS1grM6paGB6g" name="int"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_CGXPcDcNEeS1grM6paGB6g" name="setStatus">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DgXvUDcNEeS1grM6paGB6g" name="int"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_tuC74DXiEeSiuqb9jq0Hgw" name="ServletResponse">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0_qIUDXiEeSiuqb9jq0Hgw" name="getCharacterEncoding"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_44jFcDXiEeSiuqb9jq0Hgw" name="getContentType"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7msGsDXiEeSiuqb9jq0Hgw" name="getOutputStream"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-gtAwDXiEeSiuqb9jq0Hgw" name="getWriter"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ACEF0DXjEeSiuqb9jq0Hgw" name="setCharacterEncoding">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_CdgNgDXjEeSiuqb9jq0Hgw" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EHtskDXjEeSiuqb9jq0Hgw" name="setContentLength">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_FrVbcDXjEeSiuqb9jq0Hgw" name="int"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HWLzsDXjEeSiuqb9jq0Hgw" name="setContentType">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JQkcwDXjEeSiuqb9jq0Hgw" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PqfMMDXjEeSiuqb9jq0Hgw" name="setBufferSize">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_REhhQDXjEeSiuqb9jq0Hgw" name="int"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Spod4DXjEeSiuqb9jq0Hgw" name="getBufferSize"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_U5njgDXjEeSiuqb9jq0Hgw" name="flushBuffer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XMdI0DXjEeSiuqb9jq0Hgw" name="isCommitted"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aH93sDXjEeSiuqb9jq0Hgw" name="setLocale"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bfRB0DXjEeSiuqb9jq0Hgw" name="getLocale"/>
+  </packagedElement>
+</uml:Model>
