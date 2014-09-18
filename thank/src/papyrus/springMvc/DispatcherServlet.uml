@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__AoNwDwTEeS_3sOH8jyfcQ" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_AQG4oDwUEeS_3sOH8jyfcQ" name="DispatcherServlet">
+    <generalization xmi:type="uml:Generalization" xmi:id="_G7cIMDwUEeS_3sOH8jyfcQ" general="_Ekh7MDwUEeS_3sOH8jyfcQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JBGlcDwaEeS_3sOH8jyfcQ" name="initStrategies">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_K21YADwaEeS_3sOH8jyfcQ" name="ApplicationContext"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DfN0wDwbEeS_3sOH8jyfcQ" name="getDefaultStrategy">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_FALRMDwbEeS_3sOH8jyfcQ" name="ApplicationContext"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_GrQS8DwbEeS_3sOH8jyfcQ" name="Class&lt;T>"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NmcjcDwbEeS_3sOH8jyfcQ" name="doService">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_P9UUMDwbEeS_3sOH8jyfcQ" name="HttpServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_R2bK4DwbEeS_3sOH8jyfcQ" name="HttpServletResponse"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_iJyrsDwbEeS_3sOH8jyfcQ" name="doDispatch">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4heYDwbEeS_3sOH8jyfcQ" name="HttpServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lCvOwDwbEeS_3sOH8jyfcQ" name="HttpServletResponse"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_dYitwDwcEeS_3sOH8jyfcQ" name="render">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fer64DwcEeS_3sOH8jyfcQ" name="ModelAndView"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_giTUADwcEeS_3sOH8jyfcQ" name="HttpServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hnmIIDwcEeS_3sOH8jyfcQ" name="HttpServletResponse"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ekh7MDwUEeS_3sOH8jyfcQ" name="FrameworkServlet" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_OERzIDwUEeS_3sOH8jyfcQ" general="_M3J4sDwUEeS_3sOH8jyfcQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FNVq0DwYEeS_3sOH8jyfcQ" name="initServletBean"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JKmKkDwYEeS_3sOH8jyfcQ" name="initWebApplicationContext"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_V9SZ8DwYEeS_3sOH8jyfcQ" name="findWebApplicationContext"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bB148DwYEeS_3sOH8jyfcQ" name="createWebApplicationContext">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ciMRYDwYEeS_3sOH8jyfcQ" name="ApplicationContext"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xiFywDwYEeS_3sOH8jyfcQ" name="service">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_0pF_8DwYEeS_3sOH8jyfcQ" name="HttpServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_12524DwYEeS_3sOH8jyfcQ" name="HttpServletResponse"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4ug9MDwYEeS_3sOH8jyfcQ" name="doGet">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_6tCfYDwYEeS_3sOH8jyfcQ" name="HttpServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7zysEDwYEeS_3sOH8jyfcQ" name="HttpServletResponse"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9CALoDwYEeS_3sOH8jyfcQ" name="doPost">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_AdR_sDwZEeS_3sOH8jyfcQ" name="HttpServletRequest"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BjYsIDwZEeS_3sOH8jyfcQ" name="HttpServletResponse"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M3J4sDwUEeS_3sOH8jyfcQ" name="HttpServletBean" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_TPlaYDwUEeS_3sOH8jyfcQ" general="_RdmfYDwUEeS_3sOH8jyfcQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_pIGT4DwWEeS_3sOH8jyfcQ" name="setEnvironment">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rsPEkDwWEeS_3sOH8jyfcQ" name="Environment"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sR4vUDwWEeS_3sOH8jyfcQ" name="getEnvironment"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RdmfYDwUEeS_3sOH8jyfcQ" name="HttpServlet" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_c1nggDwUEeS_3sOH8jyfcQ" name="EnvironmentCapable">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zRIEQDwUEeS_3sOH8jyfcQ" name="getEnvironment"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_f4nXcDwUEeS_3sOH8jyfcQ" name="Realization1" client="_M3J4sDwUEeS_3sOH8jyfcQ" supplier="_c1nggDwUEeS_3sOH8jyfcQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_gVTTcDwUEeS_3sOH8jyfcQ" name="EnvironmentAware">
+    <generalization xmi:type="uml:Generalization" xmi:id="_AEg3MDwVEeS_3sOH8jyfcQ" general="_-CRSoDwUEeS_3sOH8jyfcQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_M_I6kDwVEeS_3sOH8jyfcQ" name="setEnvironment">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_POJv0DwVEeS_3sOH8jyfcQ" name="Environment"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_iYlZ0DwUEeS_3sOH8jyfcQ" name="Realization2" client="_M3J4sDwUEeS_3sOH8jyfcQ" supplier="_gVTTcDwUEeS_3sOH8jyfcQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-CRSoDwUEeS_3sOH8jyfcQ" name="Aware"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_QvAzsDwXEeS_3sOH8jyfcQ" name="ApplicationContextAware">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WV91IDwXEeS_3sOH8jyfcQ" name="setApplicationContext">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YWPDwDwXEeS_3sOH8jyfcQ" name="ApplicationContext"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_TEuG0DwXEeS_3sOH8jyfcQ" name="Realization3" client="_Ekh7MDwUEeS_3sOH8jyfcQ" supplier="_QvAzsDwXEeS_3sOH8jyfcQ"/>
+</uml:Model>

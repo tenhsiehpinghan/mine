@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ipvFIDwdEeS_3sOH8jyfcQ" name="model">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_lbc-0DwdEeS_3sOH8jyfcQ" name="ApplicationContext">
+    <generalization xmi:type="uml:Generalization" xmi:id="_qux5oDwdEeS_3sOH8jyfcQ" general="_nx2OcDwdEeS_3sOH8jyfcQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_y3IrYDweEeS_3sOH8jyfcQ" general="_thLIwDwdEeS_3sOH8jyfcQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_B2N50DwfEeS_3sOH8jyfcQ" general="_2wEr0DweEeS_3sOH8jyfcQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_TCSkQDwfEeS_3sOH8jyfcQ" general="_ERiFsDwfEeS_3sOH8jyfcQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_Xga8cDwfEeS_3sOH8jyfcQ" general="_WAKqoDwfEeS_3sOH8jyfcQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_wyp1sDwfEeS_3sOH8jyfcQ" general="_eqcTIDwfEeS_3sOH8jyfcQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4sYLADwfEeS_3sOH8jyfcQ" name="getId"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6XCWADwfEeS_3sOH8jyfcQ" name="getApplicationName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9JkIADwfEeS_3sOH8jyfcQ" name="getStartupDate"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AF8ZkDwgEeS_3sOH8jyfcQ" name="getParent"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DeWf0DwgEeS_3sOH8jyfcQ" name="getAutowireCapableBeanFactory"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_nx2OcDwdEeS_3sOH8jyfcQ" name="EnvironmentCapable">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_omCEcDwdEeS_3sOH8jyfcQ" name="getEnvironment"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_thLIwDwdEeS_3sOH8jyfcQ" name="ListableBeanFactory">
+    <generalization xmi:type="uml:Generalization" xmi:id="_PNbA8DweEeS_3sOH8jyfcQ" general="_v_LcQDwdEeS_3sOH8jyfcQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VKzlYDweEeS_3sOH8jyfcQ" name="containsBeanDefinition">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Wr2hYDweEeS_3sOH8jyfcQ" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aIVPUDweEeS_3sOH8jyfcQ" name="getBeanDefinitionCount"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bujmQDweEeS_3sOH8jyfcQ" name="getBeanDefinitionNames"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_j8JSwDweEeS_3sOH8jyfcQ" name="getBeanNamesForType">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lsX6QDweEeS_3sOH8jyfcQ" name="Class&lt;?>"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_oNgaQDweEeS_3sOH8jyfcQ" name="getBeanNamesForAnnotation">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qYH3sDweEeS_3sOH8jyfcQ" name="Class&lt;? extends Annotation>"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_v_LcQDwdEeS_3sOH8jyfcQ" name="BeanFactory">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_01Lh4DwdEeS_3sOH8jyfcQ" name="getBean">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_257n4DwdEeS_3sOH8jyfcQ" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6oPssDwdEeS_3sOH8jyfcQ" name="containsBean">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_8gJCcDwdEeS_3sOH8jyfcQ" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-Azj8DwdEeS_3sOH8jyfcQ" name="isSingleton">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="__ys_YDwdEeS_3sOH8jyfcQ" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Bg8p4DweEeS_3sOH8jyfcQ" name="isPrototype">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_C2s74DweEeS_3sOH8jyfcQ" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FbWp8DweEeS_3sOH8jyfcQ" name="isTypeMatch">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_G5mwoDweEeS_3sOH8jyfcQ" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_INMfcDweEeS_3sOH8jyfcQ" name="Class&lt;?>"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_2wEr0DweEeS_3sOH8jyfcQ" name="HierarchicalBeanFactory">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5gJmwDweEeS_3sOH8jyfcQ" general="_v_LcQDwdEeS_3sOH8jyfcQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7tlusDweEeS_3sOH8jyfcQ" name="getParentBeanFactory"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AP41MDwfEeS_3sOH8jyfcQ" name="containsLocalBean"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_ERiFsDwfEeS_3sOH8jyfcQ" name="MessageSource">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ia_1cDwfEeS_3sOH8jyfcQ" name="getMessage">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_KMoLIDwfEeS_3sOH8jyfcQ" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_MsoCsDwfEeS_3sOH8jyfcQ" name="Object[]"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_N0oMkDwfEeS_3sOH8jyfcQ" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_P8EaMDwfEeS_3sOH8jyfcQ" name="Locale"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_WAKqoDwfEeS_3sOH8jyfcQ" name="ApplicationEventPublisher">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Zt0oIDwfEeS_3sOH8jyfcQ" name="publishEvent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_b0v4YDwfEeS_3sOH8jyfcQ" name="ApplicationEvent"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_eqcTIDwfEeS_3sOH8jyfcQ" name="ResourcePatternResolver">
+    <generalization xmi:type="uml:Generalization" xmi:id="_idwMsDwfEeS_3sOH8jyfcQ" general="_houCIDwfEeS_3sOH8jyfcQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uG6oMDwfEeS_3sOH8jyfcQ" name="getResources">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_vnGBgDwfEeS_3sOH8jyfcQ" name="String"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_houCIDwfEeS_3sOH8jyfcQ" name="ResourceLoader">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kmh3EDwfEeS_3sOH8jyfcQ" name="getResource">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_mr8EYDwfEeS_3sOH8jyfcQ" name="String"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_o0E1kDwfEeS_3sOH8jyfcQ" name="getClassLoader"/>
+  </packagedElement>
+</uml:Model>

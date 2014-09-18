@@ -4,6 +4,7 @@ import idv.hsiehpinghan.servlet.model.HttpServletRequestInfo;
 import idv.hsiehpinghan.servlet.utility.HttpServletRequestUtility;
 
 import java.io.IOException;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -30,6 +31,8 @@ public class HttpHeaderInfoServlet extends HttpServlet {
 		logger.info(this.getServletContext().getServerInfo());
 		
 		super.doGet(req, resp);
+		
+		ScheduledThreadPoolExecutor a;
 	}
 	
 }

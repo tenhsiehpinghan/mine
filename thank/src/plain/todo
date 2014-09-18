@@ -1,1 +1,2 @@
-一、實作HttpSessionListener將使用者資訊記錄在db中以支援多台web server架構。
+一、實作HttpSessionListener將使用者資訊記錄在db中以支援多台web server架構。需用到HttpSessionBindingListener，參考SCWCD專業認證手冊p183。
+二、實作filter顯示request及response資訊。

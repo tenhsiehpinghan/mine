@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_rmXOYD89EeSyVt7r-xNuBQ" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_xWYFMD89EeSyVt7r-xNuBQ" name="BeanNameUrlHandlerMapping">
+    <generalization xmi:type="uml:Generalization" xmi:id="_HNaC4D8-EeSyVt7r-xNuBQ" general="_EZvocD8-EeSyVt7r-xNuBQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JLuQED9GEeSyVt7r-xNuBQ" name="determineUrlsForHandler">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_KvzR8D9GEeSyVt7r-xNuBQ" name="String"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1KPYYD89EeSyVt7r-xNuBQ" name="AbstractUrlHandlerMapping">
+    <generalization xmi:type="uml:Generalization" xmi:id="_OzcnMD8-EeSyVt7r-xNuBQ" general="_K6LPkD8-EeSyVt7r-xNuBQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_U0QO4D9FEeSyVt7r-xNuBQ" name="setLazyInitHandlers">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WkRbAD9FEeSyVt7r-xNuBQ" name="boolean"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cRn_YD9FEeSyVt7r-xNuBQ" name="getHandlerInternal">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_d_LGUD9FEeSyVt7r-xNuBQ" name="HttpServletRequest"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_md8CYD9FEeSyVt7r-xNuBQ" name="lookupHandler">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ox1-sD9FEeSyVt7r-xNuBQ" name="String"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qJo4ED9FEeSyVt7r-xNuBQ" name="HttpServletRequest"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EZvocD8-EeSyVt7r-xNuBQ" name="AbstractDetectingUrlHandlerMapping">
+    <generalization xmi:type="uml:Generalization" xmi:id="_HzfLcD8-EeSyVt7r-xNuBQ" general="_1KPYYD89EeSyVt7r-xNuBQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QEbNQD9GEeSyVt7r-xNuBQ" name="detectHandlers"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_K6LPkD8-EeSyVt7r-xNuBQ" name="AbstractHandlerMapping">
+    <generalization xmi:type="uml:Generalization" xmi:id="_PSEc4D8-EeSyVt7r-xNuBQ" general="_Nqv5wD8-EeSyVt7r-xNuBQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_CfR08D9AEeSyVt7r-xNuBQ" name="setOrder">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Eb89AD9AEeSyVt7r-xNuBQ" name="int"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JGs04D9AEeSyVt7r-xNuBQ" name="setDefaultHandler">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_K8lYcD9AEeSyVt7r-xNuBQ" name="Object"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YD2wsD9AEeSyVt7r-xNuBQ" name="setUrlDecode">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Z-i7wD9AEeSyVt7r-xNuBQ" name="boolean"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_efQG0D9AEeSyVt7r-xNuBQ" name="setRemoveSemicolonContent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gFiIID9AEeSyVt7r-xNuBQ" name="boolean"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_isZcsD9AEeSyVt7r-xNuBQ" name="setUrlPathHelper">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_kXlzMD9AEeSyVt7r-xNuBQ" name="UrlPathHelper"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_M884QD9BEeSyVt7r-xNuBQ" name="getPathMatcher"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PfrTsD9BEeSyVt7r-xNuBQ" name="setInterceptors">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_RXCd8D9BEeSyVt7r-xNuBQ" name="Object[]"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bIhmID9BEeSyVt7r-xNuBQ" name="initApplicationContext"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_pRo14D9BEeSyVt7r-xNuBQ" name="getHandler">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rcAbsD9BEeSyVt7r-xNuBQ" name="HttpServletRequest"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Nqv5wD8-EeSyVt7r-xNuBQ" name="WebApplicationObjectSupport">
+    <generalization xmi:type="uml:Generalization" xmi:id="_SOcHYD8-EeSyVt7r-xNuBQ" general="_RZ7hQD8-EeSyVt7r-xNuBQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_wo5pQD8_EeSyVt7r-xNuBQ" name="getWebApplicationContext"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4-FLgD8_EeSyVt7r-xNuBQ" name="getTempDir"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RZ7hQD8-EeSyVt7r-xNuBQ" name="ApplicationObjectSupport">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_whtRkD8-EeSyVt7r-xNuBQ" name="setApplicationContext">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_1c6AQD8-EeSyVt7r-xNuBQ" name="ApplicationContext"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3KfjcD8-EeSyVt7r-xNuBQ" name="initApplicationContext"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5RynID8-EeSyVt7r-xNuBQ" name="getMessageSourceAccessor"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_UizWsD8-EeSyVt7r-xNuBQ" name="ApplicationContextAware">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YjOfMD8-EeSyVt7r-xNuBQ" name="setApplicationContext">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_d_TtYD8-EeSyVt7r-xNuBQ" name="ApplicationContext"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_WRV8ID8-EeSyVt7r-xNuBQ" name="Realization1" client="_RZ7hQD8-EeSyVt7r-xNuBQ" supplier="_UizWsD8-EeSyVt7r-xNuBQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_VJ6kkD8_EeSyVt7r-xNuBQ" name="ServletContextAware">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XkQgED8_EeSyVt7r-xNuBQ" name="setServletContext">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZGnDoD8_EeSyVt7r-xNuBQ" name="ServletContext"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_aLGmgD8_EeSyVt7r-xNuBQ" name="Realization2" client="_Nqv5wD8-EeSyVt7r-xNuBQ" supplier="_VJ6kkD8_EeSyVt7r-xNuBQ"/>
+</uml:Model>
